@@ -61,6 +61,26 @@ export default function Home() {
 					<div className='className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96'>
 						<Image src={kakashi} layout='fill' />
 					</div>
+					<div>
+						<h3 className='text-3xl py-1'>Servives I offer</h3>
+						<p className='text-md py-2 leading-8 text-gray-500'>
+							I specialize in crafting dynamic and engaging digital experiences
+							as a web developer. My services encompass the full spectrum of web
+							development, ranging from creating visually captivating and
+							responsive websites to building sophisticated web applications
+							using cutting-edge technologies such as React, Next.js, HTML, CSS,
+							and JavaScript. With a keen eye for design and a commitment to
+							seamless functionality, I am dedicated to bringing your ideas to
+							life and delivering user-centric solutions that elevate your
+							online presence. Whether you require a polished website or a
+							robust web application, I am here to transform your vision into a
+							compelling reality, ensuring a seamless and captivating user
+							experience at every step.
+						</p>
+					</div>
+					<div>
+						<div></div>
+					</div>
 				</section>
 			</main>
 		</div>
