@@ -1,3 +1,4 @@
+"use client";
 import React from "react"; // Don't forget to import React
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs"; // Correct the icon import
@@ -8,19 +9,25 @@ import {
 } from "react-icons/ai"; // Correct the icon import
 import Head from "next/head";
 import kakashi from "../public/kakashi.jpg";
+
+import { useState } from "react";
 export default function Home() {
+	const [darkmode, setDarkMode] = useState(false);
 	return (
-		<div>
+		<div className={darkmode ? "dark" : ""}>
 			<Head>
 				<title>Angel's Portfolio</title>
 			</Head>
-			<main className='bg-black px-10 md:px-20 lg:px-40'>
+			<main className='bg-white  px-10 md:px-20 lg:px-40 dark:bg-black'>
 				<section className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
-						<h1 className='text-sm'>developed by Angel</h1>
+						<h1 className='text-sm '>developed by Angel</h1>
 						<ul className='flex items-center'>
 							<li>
-								<BsFillMoonStarsFill className='cursor-pointer text-2xl' />
+								<BsFillMoonStarsFill
+									onClick={() => setDarkMode(!darkmode)}
+									className='cursor-pointer text-2xl'
+								/>
 							</li>
 							<li>
 								<a
