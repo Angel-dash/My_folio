@@ -14,7 +14,7 @@ export default function Home() {
 			<Head>
 				<title>Angel's Portfolio</title>
 			</Head>
-			<main className='bg-black px-10'>
+			<main className='bg-black px-10 md:px-20 lg:px-40'>
 				<section className='min-h-screen'>
 					<nav className='py-10 mb-12 flex justify-between'>
 						<h1 className='text-sm'>developed by Angel</h1>
@@ -32,11 +32,13 @@ export default function Home() {
 						</ul>
 					</nav>
 					<div className='text-center p-10 py-10'>
-						<h2 className='text-3xl py-2 text-teal-600 font-medium'>
+						<h2 className='text-3xl py-2 text-teal-600 font-medium md:text-6xl'>
 							Angel Ghimire
 						</h2>
-						<h3 className='text-2xl py-2'>Web developer and Data Science</h3>
-						<p className='text-sm py-5 leading-8 text0=-gray-800'>
+						<h3 className='text-2xl py-2 md:text-3xl'>
+							Web developer and Data Science
+						</h3>
+						<p className='text-sm py-5 leading-8 text0=-gray-800 md:text-xl max-w-xl mx-auto'>
 							Hello! I'm passionate about crafting captivating digital
 							experiences through frontend development. With a strong foundation
 							in technologies like React, JavaScript, HTML, and CSS, I'm
@@ -62,24 +64,75 @@ export default function Home() {
 						<Image src={kakashi} layout='fill' />
 					</div>
 					<div>
-						<h3 className='text-3xl py-1'>Servives I offer</h3>
-						<p className='text-md py-2 leading-8 text-gray-500'>
-							I specialize in crafting dynamic and engaging digital experiences
-							as a web developer. My services encompass the full spectrum of web
-							development, ranging from creating visually captivating and
-							responsive websites to building sophisticated web applications
-							using cutting-edge technologies such as React, Next.js, HTML, CSS,
-							and JavaScript. With a keen eye for design and a commitment to
-							seamless functionality, I am dedicated to bringing your ideas to
-							life and delivering user-centric solutions that elevate your
-							online presence. Whether you require a polished website or a
-							robust web application, I am here to transform your vision into a
-							compelling reality, ensuring a seamless and captivating user
-							experience at every step.
+						<h3 className='text-3xl py-1 dark:text-white '>Services I offer</h3>
+						<p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
+							Since the beginning of my journey as a freelance designer and
+							developer, I've done remote work for
+							<span className='text-teal-500'> agencies </span>
+							consulted for <span className='text-teal-500'>startups </span>
+							and collaborated with talanted people to create digital products
+							for both business and consumer use.
+						</p>
+						<p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
+							I offer from a wide range of services, including brand design,
+							programming and teaching.
 						</p>
 					</div>
 					<div>
-						<div></div>
+						<div className='text-center shadow-lg p-10 rounded-xl my-10'>
+							{/* <Image src={design} width={100} height={100} /> */}
+							<h3 className='text-lg font-medium pt-8 pb-2'>
+								Beautiful design{" "}
+							</h3>
+							<p className='py-2'>
+								<h4 className='py-4 text-teal-600'>Design tools I used</h4>
+								<p className='text-gray-800 py-1'>Photoshop</p>
+								<p className='text-gray-800 py-1'>Figma</p>
+								<p className='text-gray-800 py-1'>Illustrator</p>
+							</p>
+						</div>
+						<div className='text-center shadow-lg p-10 rounded-xl my-10'>
+							{/* <Image src={design} width={100} height={100} /> */}
+							<h3 className='text-lg font-medium pt-8 pb-2'>
+								Beautiful design{" "}
+							</h3>
+							<p className='py-2'>
+								<h4 className='py-4 text-teal-600'>Design tools I used</h4>
+								<p className='text-gray-800 py-1'>Photoshop</p>
+								<p className='text-gray-800 py-1'>Figma</p>
+								<p className='text-gray-800 py-1'>Illustrator</p>
+							</p>
+						</div>
+						<div className='text-center shadow-lg p-10 rounded-xl my-10'>
+							{/* <Image src={design} width={100} height={100} /> */}
+							<h3 className='text-lg font-medium pt-8 pb-2'>
+								Beautiful design{" "}
+							</h3>
+							<p className='py-2'>
+								<h4 className='py-4 text-teal-600'>Design tools I used</h4>
+								<p className='text-gray-800 py-1'>Photoshop</p>
+								<p className='text-gray-800 py-1'>Figma</p>
+								<p className='text-gray-800 py-1'>Illustrator</p>
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div>
+						<h3 className='text-3xl py-1'>Porfolio</h3>
+						<h3 className='text-3xl py-1 dark:text-white '>Services I offer</h3>
+						<p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
+							Since the beginning of my journey as a freelance designer and
+							developer, I've done remote work for
+							<span className='text-teal-500'> agencies </span>
+							consulted for <span className='text-teal-500'>startups </span>
+							and collaborated with talanted people to create digital products
+							for both business and consumer use.
+						</p>
+						<p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
+							I offer from a wide range of services, including brand design,
+							programming and teaching.
+						</p>
 					</div>
 				</section>
 			</main>
